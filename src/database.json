@@ -25,11 +25,11 @@
     "password": "$2a$10$LU569Ib96tkpFxKT6vicpOxKxKsqrKHlDmtxg9tVLly1Fc0rXPgV6",
     "role": "user",
     "account": "savings",
-    "balance": 100000004050
+    "balance": -359999991952
   },
   {
     "email": "denrele.com",
-    "password": "$2a$10$NGdPQTCFs8asHkyUWKQBEOJmya5rdKgPoIliT9e61Ab67n2M8HATO",
+    "password": "$2a$10$KsJRpjT7suKtj7pINH94jOC28psmjMpQvhgwQZdvvGR5htJYed21O",
     "role": "user",
     "account": "savings",
     "balance": 0
