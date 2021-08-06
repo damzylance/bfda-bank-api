@@ -1,5 +1,4 @@
 const fs = require('fs')
-const bcrypt = require('bcryptjs')
 // -verify if user role is admin
 // -search database for verify email and password
 // -verify that user role is admin
@@ -9,29 +8,6 @@ const bcrypt = require('bcryptjs')
 const creditUser = (req, res) => {
     const userData = req.body
     const fileData = JSON.parse(fs.readFileSync('src/database.json'))
-
-    if (!userData.email || !userData.password) {
-        return res.status(404).json({
-            message: 'username or password required',
-        })
-    }
-
-    const adminRecord = fileData.find(function ({ email }) {
-        return email.toLocaleLowerCase() === userData.email.toLowerCase()
-    })
-
-    if (!adminRecord)
-        return res.status(404).json({ message: 'incorrect email or password' })
-
-    const isValid = bcrypt.compareSync(userData.password, adminRecord.password)
-
-    if (!isValid)
-        return res.status(404).json({ message: 'incorrect email or password' })
-
-    if (adminRecord.role !== 'admin')
-        return res.status(404).json({
-            message: "you don't have the permission to perform this action",
-        })
 
     const userRecord = fileData.find(function ({ email }) {
         return email.toLocaleLowerCase() === userData.user.toLowerCase()
@@ -49,29 +25,6 @@ const creditUser = (req, res) => {
 const debitUser = (req, res) => {
     const userData = req.body
     const fileData = JSON.parse(fs.readFileSync('src/database.json'))
-
-    if (!userData.email || !userData.password) {
-        return res.status(404).json({
-            message: 'username or password required',
-        })
-    }
-
-    const adminRecord = fileData.find(function ({ email }) {
-        return email.toLocaleLowerCase() === userData.email.toLowerCase()
-    })
-
-    if (!adminRecord)
-        return res.status(404).json({ message: 'incorrect email or password' })
-
-    const isValid = bcrypt.compareSync(userData.password, adminRecord.password)
-
-    if (!isValid)
-        return res.status(404).json({ message: 'incorrect email or password' })
-
-    if (adminRecord.role !== 'admin')
-        return res.status(404).json({
-            message: "you don't have the permission to perform this action",
-        })
 
     const userRecord = fileData.find(function ({ email }) {
         return email.toLocaleLowerCase() === userData.user.toLowerCase()

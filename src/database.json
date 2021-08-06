@@ -1,37 +1,44 @@
 [
-  {
-    "email": "fdfd.com",
-    "password": "$2a$10$0ok1duIwI.0BfyeGwmM/t.qhXZ2PKctMtEFKZi4H61RhJh42JlWge",
-    "role": "user",
-    "account": "savings",
-    "balance": 0
-  },
-  {
-    "email": "wasiuadegoke14.com",
-    "password": "$2a$10$M66QMGJTLvtNm9.96jTBNuDB46kEK4nEkZWacj9dOy7LfcIoK2WRq",
-    "role": "admin",
-    "account": "savings",
-    "balance": 0
-  },
-  {
-    "email": "dolapom.com",
-    "password": "$2a$10$EIQJ4GWZyPYB7LpLZQb2MuVtjSEPU0n4lJOSO3ajZjfXk2OOOMCfy",
-    "role": "admin",
-    "account": "savings",
-    "balance": 0
-  },
-  {
-    "email": "dolapo.com",
-    "password": "$2a$10$LU569Ib96tkpFxKT6vicpOxKxKsqrKHlDmtxg9tVLly1Fc0rXPgV6",
-    "role": "user",
-    "account": "savings",
-    "balance": -359999991952
-  },
-  {
-    "email": "denrele.com",
-    "password": "$2a$10$KsJRpjT7suKtj7pINH94jOC28psmjMpQvhgwQZdvvGR5htJYed21O",
-    "role": "user",
-    "account": "savings",
-    "balance": 0
-  }
+    {
+        "email": "fdfd.com",
+        "password": "$2a$10$0ok1duIwI.0BfyeGwmM/t.qhXZ2PKctMtEFKZi4H61RhJh42JlWge",
+        "role": "user",
+        "account": "savings",
+        "balance": 0
+    },
+    {
+        "email": "wasiuadegoke14.com",
+        "password": "$2a$10$M66QMGJTLvtNm9.96jTBNuDB46kEK4nEkZWacj9dOy7LfcIoK2WRq",
+        "role": "admin",
+        "account": "savings",
+        "balance": 0
+    },
+    {
+        "email": "dolapom.com",
+        "password": "$2a$10$EIQJ4GWZyPYB7LpLZQb2MuVtjSEPU0n4lJOSO3ajZjfXk2OOOMCfy",
+        "role": "admin",
+        "account": "savings",
+        "balance": 0
+    },
+    {
+        "email": "dolapo.com",
+        "password": "$2a$10$LU569Ib96tkpFxKT6vicpOxKxKsqrKHlDmtxg9tVLly1Fc0rXPgV6",
+        "role": "user",
+        "account": "savings",
+        "balance": 3400
+    },
+    {
+        "email": "denrele.com",
+        "password": "$2a$10$KsJRpjT7suKtj7pINH94jOC28psmjMpQvhgwQZdvvGR5htJYed21O",
+        "role": "user",
+        "account": "savings",
+        "balance": 0
+    },
+    {
+        "email": "denrerrle.com",
+        "password": "$2a$10$l2aomx3lOpEvEuKuAJP7Rurusc6SW5KBF8eaKMZtCwiht87S/fNyO",
+        "role": "user",
+        "account": "savings",
+        "balance": 0
+    }
 ]
