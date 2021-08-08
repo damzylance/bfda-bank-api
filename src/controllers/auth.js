@@ -58,9 +58,13 @@ const signIn = (req, res) => {
     if (!isValid)
         return res.status(404).json({ message: 'incorrect email or password' })
 
-    const token = jwt.sign({ user: userRecord.email }, 'secret', {
-        expiresIn: '2h',
-    })
+    const token = jwt.sign(
+        { user: userRecord.email, role: userRecord.role },
+        'secret',
+        {
+            expiresIn: '2h',
+        }
+    )
 
     return res.status(201).json({
         message: 'sign in succcessful',
